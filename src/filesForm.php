@@ -44,7 +44,6 @@ if ($_FILES) {
             $errors[$_FILES['fichier']['name'][$i]] = "Pas une image ! : " . $_FILES['fichier']['name'][$i] . "<br />";
         }
     }
-    $errors[$_FILES['fichier']['name'][$i - 1]] = "<br />";
 }
 
 if ($errors) : ?>
