@@ -29,13 +29,6 @@ if ($_FILES) {
         // si le file fait moins de 1Mo
             if (filesize($_FILES['fichier']['tmp_name'][$i]) < 1000000) {
 
-              /*   echo $_FILES['fichier']['name'][$i] . "<br />"; //Contient le nom d'origine du fichier (sur le poste du client)
-                echo $_FILES['fichier']['tmp_name'][$i] . "<br />"; //Nom temporaire du fichier dans le dossier temporaire du système (sur le serveur)
-                echo $_FILES['fichier']['type'][$i] . "<br />"; //Contient le type MIME du fichier (plus fiable que l'extension)
-                echo $_FILES['fichier']['size'][$i] . "<br />"; //Contient la taille du fichier en octets
-                echo $_FILES['fichier']['error'][$i] . "<br />"; //Contient le code de l'erreur (le cas échéant)
-                 */
-
         // chemin vers un dossier sur le serveur qui va recevoir les fichiers uploadés (attention ce dossier doit être accessible en écriture)
                 $uploadDir = 'upload/';
         // on génère un nom de fichier à partir du nom de fichier sur le poste du client (mais vous pouvez générer ce nom autrement si vous le souhaitez)
